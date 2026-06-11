@@ -21,9 +21,15 @@ public class HitungGaji extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }
     void reset(){
-        txtNama.setText(null);
-        txtHari.setText(null);
+
+        txtNama.setText("");
+        txtHari.setText("");
+        cJabatan.setSelectedIndex(0);
         
+        lblNama.setText("");
+        lblJabatan.setText("");
+        lblPerhitungan.setText("");
+        lblTotal.setText(""); 
     }
    
     /**
@@ -208,16 +214,7 @@ public class HitungGaji extends javax.swing.JFrame {
 
     private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
         // TODO add your handling code here:
-        txtNama.setText("");
-        txtHari.setText("");
-        cJabatan.setSelectedIndex(0);
-        
-        lblNama.setText("");
-        lblJabatan.setText("");
-        lblPerhitungan.setText("");
-        lblTotal.setText("");
-        
-        txtNama.requestFocus();
+       reset();
     }//GEN-LAST:event_btnResetActionPerformed
 
     private void btnTutupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTutupActionPerformed
